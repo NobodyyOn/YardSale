@@ -56,37 +56,29 @@
             flex-direction: column;
         }
 
-        .container__form div {
-            display: flex;
-            flex-direction: column;
-        }
-
-
         .container__label {
             font-size: var(--sm);
             font-weight: bold;
             margin-bottom: 0.8rem;
         }
 
-        .container__input {
+        .container__value {
             height: 35px;
-            padding: 0.8rem;
-            margin-bottom: 2rem;
+            margin-top: 0.9rem;
+            margin-bottom: 3rem;
             font-size: var(--md);
-            border-radius: 10px;
-            border: none;
-            background-color: var(--text-input-field);
+            color: var(--very-light-pink);
         }
 
         .container__button {
             height: 50px;
-            margin-top: 1.2rem;
-            border: none;
+            margin-top: 1rem;
+            border: 1px solid var(--hospital-green);
             font-size: var(--lg);
             font-weight: bold;
-            color: var(--white);
+            color: var(--hospital-green);
             border-radius: 10px;
-            background-color: var(--hospital-green);
+            background-color: var(--white);
         }
 
 
@@ -121,17 +113,17 @@
 
                 <div>
                     <label for="name" class="container__label">Name</label>
-                    <input type="text" id="name" placeholder="pepito" class="container__input">
+                    <p class="container__value">Pepito</p>
 
                     <label for="email" class="container__label">Email address</label>
-                    <input type="text" id="email" placeholder="camilayokoo@gmail.com" class="container__input">
+                    <p class="container__value">pepito@gmail.com</p>
 
                     <label for="password" class="container__label">Password</label>
-                    <input type="password" id="password" placeholder="********" class="container__input">
+                    <p class="container__value">*********</p>
                 </div>
 
 
-                <input type="submit" value="Create" class="container__button">
+                <input type="submit" value="Edit" class="container__button">
             </form>
 
 
