@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+
+    <style>
+        :root {
+            --very-light-pink: #797979;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000;
+            --dark: #232830;
+            --sm: 1.4rem;
+            --md: 1.6rem;
+            --lg: 1.8rem;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-size: 62.5%;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+     
+
+        .cards-container {
+            width: 100%;
+            display: grid;
+            gap: 2.4rem;
+            grid-template-columns: repeat(auto-fill, 20.4rem);
+            
+            place-content: center;
+        }
+
+
+        .cards__card {
+            width: 20.4rem;
+        }
+
+        .cards__card img {
+            width: 100%;
+            height: 240px;
+            border-radius: 1.5rem;
+            object-fit: cover;
+        }
+
+        .card__info {
+            width: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.6rem;
+        }
+
+        .card__info figure img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .card__info div p:nth-child(1) {
+            margin-bottom: 0.4rem;
+            font-weight: bold;
+            font-size: var(--md);
+        }
+
+        .card__info div p:nth-child(2){
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+        }
+
+
+        @media(max-width: 640px) {
+            .cards-container {
+
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 14rem);
+
+            }
+
+            .cards__card {
+                width: 14rem;
+            }
+
+            .cards__card img {
+                width: 100%;
+                height: 14rem;
+                border-radius: 1.5rem;
+                object-fit: cover;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header></header>
+    <main class="container">
+        <section class="cards-container">
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="cards__card">
+                    <img src="https://images.pexels.com/photos/18525574/pexels-photo-18525574.jpeg" alt="">
+                    <div class="card__info">
+
+                        <div>
+                            <p >$ 120,00</p>
+                            <p >Round Shelf</p>
+
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>
