@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+
+    <style>
+        :root {
+            --very-light-pink: #797979;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000;
+            --dark: #232830;
+            --sm: 1.4rem;
+            --md: 1.6rem;
+            --lg: 1.8rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-size: 62.5%;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .mobile-menu {
+            padding: 2.4rem;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* Espaciado entre secciones */
+        .mobile-menu__primary,
+        .mobile-menu__secondary {
+            margin-top: 2rem;
+        }
+
+        .mobile-menu__secondary {
+            margin-bottom: 5rem;
+            border-top: 1px solid var(--text-input-field);
+
+        }
+
+        .mobile-menu__secondary li:first-child {
+            margin-top: 2rem;
+        }
+
+
+        /* Espaciado entre ítems en primary y secondary */
+        .mobile-menu__primary li,
+        .mobile-menu__secondary li {
+            margin-bottom: 3.5rem;
+        }
+
+        /* Tertiary sin márgenes */
+        .mobile-menu__tertiary li {
+            margin-bottom: 0;
+        }
+
+        /* Estilo SOLO para enlaces en primary y secondary */
+        .mobile-menu__primary a,
+        .mobile-menu__secondary a {
+            font-weight: bold;
+            color: var(--black);
+            text-decoration: none;
+            font-size: var(--md);
+        }
+
+
+        /* Estilo SOLO para enlaces en tertiary */
+        a.mobile-menu__email {
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+        a.mobile-menu__signout {
+            font-size: var(--sm);
+            color: var(--hospital-green);
+            font-weight: normal;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mobile-menu">
+        <ul class="mobile-menu__primary">
+            <li><a href="/">CATEGORIES</a></li>
+            <li><a href="/">All</a></li>
+            <li><a href="/">Clothes</a></li>
+            <li><a href="/">Electronics</a></li>
+            <li><a href="/">Furnitures</a></li>
+            <li><a href="/">Toys</a></li>
+            <li><a href="/">Others</a></li>
+        </ul>
+
+        <ul class="mobile-menu__secondary">
+            <li><a href="/">My orders</a></li>
+            <li><a href="/">My account</a></li>
+        </ul>
+
+
+        <ul class="mobile-menu__tertiary">
+            <li><a href="/" class="mobile-menu__email">Ejemplo@gmail.com</a></li>
+            <li><a href="/" class="mobile-menu__signout">Sign out</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
