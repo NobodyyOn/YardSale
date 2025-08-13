@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+
+    <style>
+        :root {
+            --very-light-pink: #797979;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000;
+            --dark: #232830;
+            --sm: 1.4rem;
+            --md: 1.6rem;
+            --lg: 1.8rem;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-size: 62.5%;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+
+        .navbar-container {
+            display: flex;
+            padding: 1rem;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 5px 10px rgba(126, 121, 121, 0.415);
+        }
+
+        .navbar-container__menuMobile {
+            display: none;
+        }
+
+        .navbar-container__logo {
+            width: 150px;
+            margin-right: 5rem;
+            margin-left: 5rem;
+
+        }
+
+        .navbar-container__left,
+        .navbar-container__right {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-container__left ul {
+            display: flex;
+        }
+
+        .navbar-container__right ul li,
+        .navbar-container__left ul li {
+            display: flex;
+            padding: 0.5rem;
+            font-size: 2.5rem;
+            text-decoration: none;
+        }
+
+        .navbar-container__right ul li a,
+        .navbar-container__left ul li a {
+            padding: 0.5rem;
+            text-decoration: none;
+            border: 1px solid transparent; /* borde invisible por defecto */
+            color: var(--very-light-pink);
+        }
+
+
+        .navbar-container__left ul li a:hover,
+        .navbar-container__right ul li a:hover {
+            border: 1px solid var(--hospital-green);
+            border-radius: 0.8rem;
+            font-weight: bold;
+            color: var(--hospital-green);
+        }
+
+        @media (max-width: 600px) {
+            .navbar-container__menuMobile {
+                display: inline-block;
+            }
+
+            .navbar-container__left ul{
+                display: none;
+            }
+
+            .navbar-container__right ul{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar-container">
+
+        <img src="./icons/icon_menu.svg" alt="" class="navbar-container__menuMobile">
+
+        <div class="navbar-container__left">
+            <img src="./logos/logo_yard_sale.svg" alt="Logo Tienda" class="navbar-container__logo">
+            <ul>
+                <li><a href="/">All</a></li>
+                <li><a href="/">Clothes</a></li>
+                <li><a href="/">Electronics</a></li>
+                <li><a href="/">Furniture</a></li>
+                <li><a href="/">Toys</a></li>
+                <li><a href="/">Others</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="navbar-container__right">
+
+            <ul>
+                <li><a href="/">Sign in</a></li>
+            </ul>
+            <img src="./icons/icon_shopping_cart_notification.svg" alt="Carrito" class="navbar-container__cart">
+
+
+        </div>
+
+    </nav>
+</body>
+
+</html>
